@@ -1,0 +1,231 @@
+body {
+  font-family: "Roboto Slab", serif;
+  color: #c0c0c0;
+  font-size: 20px;
+}
+
+h1,
+h2 {
+  font-family: "Space Mono", monospace;
+  font-size: 40px;
+  text-align: center;
+  margin: 30px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+/*---------------------NAVIGATION-------------------------*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: #000000;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right {
+  width: 80%;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-right a {
+  text-decoration-line: none;
+  color: #00ff41;
+  font-family: "Space Mono", monospace;
+  font-size: 20px;
+}
+
+.nav-right a:hover {
+  font-style: italic;
+  color: #ff00ff;
+}
+
+.nav-right a:active {
+  color: #ff0000;
+}
+
+li {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+}
+
+/*---------------------HEADER-------------------------*/
+header {
+  padding: 50px;
+  background-color: #111111;
+}
+
+#home h1 {
+  color: #6e0dd0;
+  animation: unblur 3s 1s 1.5;
+}
+
+#home {
+  transition-property: background-color color;
+  transition-duration: 2s;
+  transition-delay: 0.5s;
+}
+
+#home:hover {
+  background-color: #c0c0c0;
+  color: #111111;
+}
+
+/*---------------------DEBUGGING-------------------------*/
+
+#duck {
+  display: flex;
+  background-color: #222222;
+  padding: 50px;
+  transition-property: background-color color;
+  transition-duration: 2s;
+  transition-delay: 0.5s;
+}
+
+#duck:hover {
+  background-color: #c0c0c0;
+  color: #222222;
+}
+
+#duck h2 {
+  color: #cc00ff;
+  font-weight: 700;
+}
+
+.text {
+  padding: 0px;
+}
+
+.text p {}
+
+.duck img {
+  width: 200px;
+}
+
+/*---------------------EMERGENCY-------------------------*/
+#emergency {
+  background-color: #333333;
+  padding: 50px 20px;
+}
+
+#emergency h2 {
+  color: #ff00ff;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.grid-item {
+  border: solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+.grid-container a {
+  color: #c0c0c0;
+  text-decoration-line: none;
+  transition-property: background-color color font-size;
+  transition-duration: 2s;
+  transition-delay: 0s;
+}
+
+.grid-container a:hover {
+  color: #00ff41;
+  font-size: 1.6rem;
+  background-color: #111111;
+}
+
+.grid-container a:active {
+  color: #ff00ff;
+  font-size: larger;
+}
+
+/*---------------------FOOTER-------------------------*/
+
+footer {
+  background-color: #444444;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#contact h2 {
+  color: #ff0099;
+}
+
+.submit-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.submit-form>*:not(button) {
+  color: white;
+  margin: 10px;
+  background-color: #444444;
+  border: 1px #ff0099 solid;
+}
+
+.submit-form>*:focus:not(button) {
+  color: black;
+  background: white;
+}
+
+.submit-form button {
+  border: 2px black solid;
+  background-color: #ff0099;
+  cursor: pointer;
+  color: white;
+  padding: 6px;
+  margin: 0 auto;
+  width: 40%;
+  font-size: 15px;
+}
+
+.submit-form button:hover {
+  background-color: black;
+  color: #ff0099;
+}
+
+.author {
+  margin-top: 20px;
+  padding: 40px;
+  background-color: black;
+}
+
+img[alt="github-icon"] {
+  width: 20px;
+  background-color: white;
+}
+
+/*keyframe for animation*/
+
+@keyframes unblur {
+  from {
+    text-shadow: 0 0 8px #c0c0c0;
+    color: transparent;
+  }
+
+  to {
+    text-shadow: 0;
+  }
+}
